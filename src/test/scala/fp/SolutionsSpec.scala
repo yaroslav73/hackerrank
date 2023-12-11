@@ -10,4 +10,9 @@ class SolutionsSpec extends AnyWordSpec with Matchers {
 
     input.map(n => evaluatingEpowX(n, 8)) shouldBe output
   }
+
+  "summation should return correct value" in {
+//    summation(area, 4, 1, List(1, 2, 3, 4, 5), List(6, 7, 8, 9, 10)) shouldBe 26172951168940.8
+    summation(area, 20, 2, List(1, 2), List(0, 1)) shouldBe 36024.10264247688
+  }
 }
